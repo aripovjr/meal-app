@@ -16,7 +16,7 @@ const AvailableMeals = () => {
 
       if (!response.ok) {
         setHasError(true);
-        throw new Error("Something is wrong");
+        throw new Error("Oops! There is no any meal left :(");
       }
 
       const responseData = await response.json();
