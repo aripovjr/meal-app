@@ -79,7 +79,9 @@ function Checkout(props) {
       >
         <label htmlFor="postal">Postal Code</label>
         <input type="text" id="postal-code" ref={postalInputRef} />
-        {!formInputValidity.postalCode && <p>Postal Code is not valid</p>}
+        {!formInputValidity.postalCode && (
+          <p>Please enter a valid value (e.g: 12345)</p>
+        )}
       </div>
       <div
         className={`${classes.control} ${
